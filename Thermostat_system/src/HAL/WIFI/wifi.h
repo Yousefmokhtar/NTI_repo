@@ -16,7 +16,6 @@ typedef enum
 
 } WIFI_Status_t;
 
-
 typedef void (*WIFI_Callback_t)(void);
 
 typedef struct
@@ -26,19 +25,14 @@ typedef struct
     uint32_t reconnect_interval_ms;
     WIFI_Callback_t on_connect;
     WIFI_Callback_t on_disconnect;
-    
+
 } WIFI_Config_t;
 
-extern void WIFI_Init_(const WIFI_Config_t *config);
-
-extern void WIFI_Process(void);
-
-extern WIFI_Status_t WIFI_GetStatus(void);
-
-extern bool WIFI_IsConnected(void);
-
-extern int WIFI_GetRSSI(void);
-
-extern uint32_t WIFI_GetIP_v4(void);
+void WIFI_Init_(const WIFI_Config_t *config);
+void WIFI_Process(void);
+WIFI_Status_t WIFI_GetStatus(void);
+bool WIFI_IsConnected(void);
+int WIFI_GetRSSI(void);
+uint32_t WIFI_GetIP_v4(void);
 
 #endif

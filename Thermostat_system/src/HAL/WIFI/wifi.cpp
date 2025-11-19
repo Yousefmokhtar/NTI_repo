@@ -2,7 +2,6 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include "../../App_cfg.h"
-#include "../../HAL/GPIO/gpio.h"
 #include "wifi.h"
 
 #if WIFI_DEBUG == STD_ON

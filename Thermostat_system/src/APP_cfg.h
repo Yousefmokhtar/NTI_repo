@@ -93,8 +93,12 @@
 #define SOUND_SPEED_CM_PER_US 0.0343f
 #define US_ECHO_TIMEOUT_US 30000UL
 // LED
-#define LED_PIN 6
+
+#define LED_1_PIN 7
+#define LED_2_PIN 8
+#define LED_3_PIN 9
 
 #define SSID ""
 #define PASSWORD ""
+
 #endif

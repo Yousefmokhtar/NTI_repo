@@ -3,7 +3,7 @@
 #include "uart.h"
 #include <String.h>
 
-#if CHATAPP_DEBUG == STD_ON
+#if UART_DEBUG == STD_ON
 #define DEBUG_PRINTLN(var) Serial.println(var)
 #else
 #define DEBUG_PRINTLN(var)
@@ -44,15 +44,3 @@ void UART_Receive_Data(UARTN_t uart_n, String &payload)
     }
 #endif
 }
-
-HardwareSerial* UART_getSerial(UARTN_t uart_n)
-{
-#if UART_ENABLED==STD_ON
-    if ((int)uart_n < MAXLENGTH) {
-        return &myserials[uart_n];  // return pointer to the correct serial
-    }
-#endif
-    return nullptr;  // return null if invalid
-}
-
-
