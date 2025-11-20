@@ -7,6 +7,9 @@
 #include <Arduino.h>
 #include <WiFi.h>
 
+extern bool mqttInitialized ;
+
+
 typedef enum
 {
     WIFI_STATUS_DISCONNECTED = 0,
@@ -34,5 +37,11 @@ WIFI_Status_t WIFI_GetStatus(void);
 bool WIFI_IsConnected(void);
 int WIFI_GetRSSI(void);
 uint32_t WIFI_GetIP_v4(void);
+
+void WIFI_PrintConnectStatus(void);
+
+
+void onWifiConnected(void);
+void onWifiDisconnected(void);
 
 #endif

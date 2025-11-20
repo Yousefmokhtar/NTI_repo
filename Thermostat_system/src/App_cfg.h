@@ -94,11 +94,55 @@
 #define US_ECHO_TIMEOUT_US 30000UL
 // LED
 
-#define LED_1_PIN 7
-#define LED_2_PIN 8
-#define LED_3_PIN 9
+#define LED_1_PIN 34
+#define LED_2_PIN 35
+#define LED_3_PIN 32
 
-#define SSID ""
-#define PASSWORD ""
+#define SSID "WE_8C5F0A"
+#define PASSWORD "j8m13979"
+
+// Standard definitions
+#define STD_ON  1
+#define STD_OFF 0
+
+// WiFi Configuration
+#define SSID     "WE_8C5F0A"
+#define PASSWORD "j8m13979"
+
+// Debug Flags
+#define WIFI_DEBUG      STD_ON
+#define LED_DEBUG       STD_OFF
+#define POT_DEBUG       STD_OFF
+#define MQTT_DEBUG      STD_ON
+
+// Feature Enables
+#define LED_ENABLED     STD_ON
+#define POT_ENABLED     STD_ON
+#define MQTT_ENABLED    STD_ON
+
+// POT Configuration
+#define POT_PIN         25  // Default POT pin (can be overridden)
+#define POT_RESOLUTION  12  // 12-bit ADC (0-4095)
+
+// Thermostat Configuration
+#define THERMOSTAT_UPDATE_RATE_MS     1000  // Update sensors every 1 second
+#define THERMOSTAT_MQTT_PUBLISH_MS    5000  // Publish to MQTT every 5 seconds
+#define THERMOSTAT_TEMP_DEADBAND      0.5f  // Temperature deadband in °C
+
+// Temperature Ranges
+#define TEMP_MIN    15.0f   // Minimum temperature (°C)
+#define TEMP_MAX    35.0f   // Maximum temperature (°C)
+#define HUMIDITY_MIN 20.0f  // Minimum humidity (%)
+#define HUMIDITY_MAX 90.0f  // Maximum humidity (%)
+
+// MQTT Configuration
+#define MQTT_BROKER         "broker.hivemq.com"
+#define MQTT_PORT           1883
+#define MQTT_KEEPALIVE      60
+#define MQTT_RECONNECT_MS   5000
+
+// System Configuration
+#define SERIAL_BAUD_RATE    115200
+
 
 #endif

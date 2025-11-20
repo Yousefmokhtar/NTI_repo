@@ -21,5 +21,6 @@ typedef struct
 void UART_Init(void);
 void UART_Receive_Data(UARTN_t uart_n, String &payload);
 void UART_Send_Data(UARTN_t uart_n, String payload);
+void UART_getSerial(HardwareSerial*serial,UARTN_t uart);
 
 #endif

@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "../../APP_cfg.h"
+#include "../../App_cfg.h"
 #include "SensorH.h"
 
 #if SENSORH_DEBUG == STD_ON

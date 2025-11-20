@@ -1,5 +1,6 @@
 #define TINY_GSM_MODEM_SIM800
 #include <TinyGsmClient.h>
+#include "../UART/uart.h"
 #include "GSM.h"
 
 
@@ -14,7 +15,7 @@ void GSM_init(UARTN_t uart)
     UART_Init();
 
     // Get the serial port handler from your UART driver
-    gsmSerial = UART_getSerial(uart);
+    UART_getSerial(gsmSerial,uart);
 
     // Create TinyGSM modem object over this serial
     modem = new TinyGsm(*gsmSerial);

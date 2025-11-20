@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "gpio.h"
-#include "../../APP_cfg.h"
+#include "../../App_cfg.h"
 
 #if GPIO_DEBUG == STD_ON
 #define DEBUG_PRINTLN(var) Serial.println(var)
@@ -8,7 +8,7 @@
 #define DEBUG_PRINTLN(var)
 #endif
 
-/* this function to Configer
+/* this function to ConfigerAPP_cfg
   1-pin mode : 1.GPIO_INPUT
              2.GPIO_INPUT_PULLUP
              3.GPIO_OUTPUT

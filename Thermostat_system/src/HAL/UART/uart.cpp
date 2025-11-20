@@ -1,7 +1,7 @@
 #include "Arduino.h"
 #include "../../App_cfg.h"
 #include "uart.h"
-#include <String.h>
+//#include <String.h>
 
 #if UART_DEBUG == STD_ON
 #define DEBUG_PRINTLN(var) Serial.println(var)
@@ -43,4 +43,11 @@ void UART_Receive_Data(UARTN_t uart_n, String &payload)
         DEBUG_PRINTLN("UART receive" + String(payload));
     }
 #endif
+}
+
+
+
+void UART_getSerial(HardwareSerial&serial,UARTN_t uart)
+{
+    serial = myserial[uart];
 }
