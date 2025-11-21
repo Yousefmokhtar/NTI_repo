@@ -1,13 +1,15 @@
 #include <Arduino.h>
-#include "HAL/MQTT/MQTT.h"
-#include "HAL/WIFI/wifi.h"
-#include "APP/Thermostat/Thermostat.h"
-#include "App_cfg.h"
+#include "src/HAL/MQTT/MQTT.h"
+#include "src/HAL/WIFI/wifi.h"
+#include "src/HAL/GSM/SIM2.h"
+#include "src/APP/Thermostat/Thermostat.h"
+#include "src/App_cfg.h"
 
 bool thermostatInitialized = false;
 
 
-void setup() 
+
+void setup()  
 {
     Serial.begin(9600);
     delay(1000);
