@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../cPP_PROJECTS"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"gpio.h": "c",
+			"cmath": "cpp",
+			"mqtt.h": "c"
+		}
+	}
+}

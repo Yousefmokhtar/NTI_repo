@@ -1,0 +1,3 @@
+/home/yousef/NTI_Smart_Thermostat_System/Thermostat_system/build/CMakeFiles/main.dir
+/home/yousef/NTI_Smart_Thermostat_System/Thermostat_system/build/CMakeFiles/edit_cache.dir
+/home/yousef/NTI_Smart_Thermostat_System/Thermostat_system/build/CMakeFiles/rebuild_cache.dir
