@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/yousef/NTI_Smart_Thermostat_System/Thermostat_system/build",
+  "command": "/usr/bin/g++  -I/home/yousef/cPP_PROJECTS/includes/utils  -std=c++17 -g -o CMakeFiles/main.dir/src/main.cpp.o -c /home/yousef/cPP_PROJECTS/src/main.cpp",
+  "file": "/home/yousef/cPP_PROJECTS/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.o"
+}
+]
