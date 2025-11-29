@@ -1,9 +1,7 @@
 #ifndef APP_CFG_H
 #define APP_CFG_H
 
-// General Definitions
-#define STD_ON 1
-#define STD_OFF 0
+
 
 // Module definitions
 #define GPIO_ENABLED STD_ON
